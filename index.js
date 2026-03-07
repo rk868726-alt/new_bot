@@ -15,13 +15,14 @@ const client = new Client({
 const prefix = "!";
 
 const manager = new Manager({
-  nodes: [
-   {
-  host: "lavalink4.jirayu.net",
-  port: 13592,
-  password: "jirayu"
+ nodes: [
+{
+  name: "local",
+  host: "newbot-production-b201.up.railway.app",
+  port: 2333,
+  password: "youshallnotpass"
 }
-  ],
+],
   send(id, payload) {
     const guild = client.guilds.cache.get(id);
     if (guild) guild.shard.send(payload);
