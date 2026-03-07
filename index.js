@@ -16,12 +16,11 @@ const prefix = "!";
 
 const manager = new Manager({
   nodes: [
-    {
-      name: "main",
-      host: "lava.link",
-      port: 80,
-      password: "anything"
-    }
+   {
+  host: "lavalink4.jirayu.net",
+  port: 13592,
+  password: "jirayu"
+}
   ],
   send(id, payload) {
     const guild = client.guilds.cache.get(id);
