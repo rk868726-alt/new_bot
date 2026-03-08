@@ -20,7 +20,7 @@ const manager = new Manager({
   name: "local",
   host: "newbot-production-b201.up.railway.app",
   port: 2333,
-  password: "youshallnotpass"
+  password: "youshallnotpass",
   secure: false
 }
 ],
