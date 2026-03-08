@@ -21,6 +21,7 @@ const manager = new Manager({
   host: "newbot-production-b201.up.railway.app",
   port: 2333,
   password: "youshallnotpass"
+  secure: false
 }
 ],
   send(id, payload) {
